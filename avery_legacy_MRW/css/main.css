@@ -1,0 +1,30 @@
+body
+{
+  font-family: 'Oswald';
+  text-align: center;
+	background-image: url(../images/ep_naturalwhite.png);
+}
+
+h2
+{
+  text-align: center;
+  font-size: 4em;
+}
+
+ul li
+{
+  list-style-type: none;
+  text-align: center;
+}
+
+a
+{
+	text-decoration: none;
+	color: #2BA5B1;
+}
+
+a:hover
+{
+	text-decoration: underline;
+	color: #006D83;
+}

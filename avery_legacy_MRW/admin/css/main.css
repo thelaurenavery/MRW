@@ -1,0 +1,69 @@
+body
+{
+  margin: 0 auto;
+  font-family: 'Oswald';
+  text-align: center;
+ color: #292929;
+  background-image: url(../images/ep_naturalwhite.png);
+}
+
+
+h1
+{
+	color: #0D8289;
+}
+
+.greeting
+{
+  font-size: 3em;
+  margin-top: 2em;
+}
+
+.input
+{
+  padding: 2em;
+}
+
+ul li
+{
+	list-style-type: none;
+	display: inline;
+	margin-right: 1em;
+}
+
+a
+{
+	text-decoration: none;
+	color: #2BA5B1;
+}
+
+a:hover
+{
+	text-decoration: underline;
+	color: #006D83;
+}
+
+input
+{
+	width: 200px;
+	height: 20px;
+}
+
+footer
+{
+	margin: 0 auto;
+}
+
+.submitButton
+{
+	background-color: #2BA5B1;
+	border: none;
+	width: 200px;
+	height: 20px;
+}
+
+.submitButton:hover
+{
+	background-color: #006d83;
+}
+
