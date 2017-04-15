@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color: black;
+	background-image:url(../images/wallTiles.jpg);
+}
+
+h1 { 
+	font-family: 'Cabin Sketch', cursive;;
+	font-size:2em;
+	text-align:center;
+	line-height:.25em;
+}
+
+#wrapper {
+	position:relative;
+	top:25px;
+	width:500px;
+	/*height:405px;*/
+	margin:0px auto;
+	border: medium solid #333;
+	background-color:#111;
+	padding-bottom: 20px;
+}
+
+#buttonHolder { 
+	padding-top:10px;
+	position:relative;
+	text-align:center;
+}
+
+#theTarget {
+	position:absolute;
+	z-index:1;
+	top: -10px;
+	left:5px;
+}
+
+#genreTitle {
+	position:absolute;
+	top: 12px;
+	left: 90px;
+	font-size: .85em;
+}
+
+#playerBar {
+	position:relative;
+	padding-top:15px;
+	left:15px;
+}
+
+.trackHolder {
+	position: relative;
+	background-color: #757575;
+    width: 401px;
+	height:300px;
+    left: 44px;
+    border: thin solid #333;
+    overflow: hidden;
+    top: -29px;
+    padding-top: 19px;
+    z-index: 0;
+    list-style-type: none;
+}
+
+.trackHolder li { 
+	padding: 8px 0 10px;
+    width: 90%;
+	height: 80px;
+    border-bottom: thin solid #ccc;
+}
+
+.trackHolder li p {
+	height: 200px;	
+}
+
+.trackHolder li:last-of-type {
+	border-bottom: none;
+}
+
+.tracks { position: relative; z-index: 50; }
+
+#videoHolder {
+	position: absolute;
+	background-color: #333;
+	width:100%;
+	height:100%;
+	top:-500px;
+	left:0px;
+	z-index:2;
+	/*opacity: 0;*/
+}
+#myVideo {
+	position:relative;
+	top:50px;
+}
+
+#closeVideoButton {
+	position:relative;
+	top:370px;
+	left:380px;
+	cursor:pointer;
+}
+	
+.trackNameStyle { 
+	/*position: absolute;*/
+	top:2px;
+	left: 30px;
+	font-size: 1em;
+	line-height:20px;
+	height:auto;
+}
+
+.greyClass {
+	position:relative;
+	height: 30px;
+	background-image:url(../images/trackBG_2.png);
+	background-repeat:no-repeat;
+	cursor:pointer;
+}
+
+.yellowClass {
+	position:relative;
+	height: 30px; 
+	background-image:url(../images/trackBG_3.png);
+	background-repeat:no-repeat;
+	cursor:pointer;
+}
+
+.purpleClass {
+	position:relative;
+	height: 30px; 
+	background-image:url(../images/trackBG_1.png);
+	background-repeat:no-repeat;
+	cursor:pointer;
+}
+
+#controlBar { 
+	width:440px; 
+	height:20px; 
+	background:rgb(102, 102, 102); 
+	position:relative; 
+	top:15px; 
+	left:44px; 
+}
+
+progress { 
+	width:150px; 
+	float:right; 
+	position:relative; 
+	top:3px; 
+}
+
+#trackTime { 
+	float:right; 
+	display:inline; 
+	padding:0px 12px; 
+	position:relative; 
+	top:-12px; 
+}
+
+#volumeSlider { 
+	position:relative; 
+	width:100px; 
+	float:left; 
+	top:-1px; 
+}
+
+#playButton { 
+	position:relative; 
+	top:0px; 
+	left:6px; 
+	float:left; 
+	display:inlineinline-block; 
+	width:20px; 
+	height:20px; 
+	background-image:url(../images/playerButtons.png); 
+	background-repeat:no-repeat; 
+	overflow:hidden; 
+	cursor:pointer; 
+}
+
+.pauseMode { background-position: 0px -20px; }
+
+#muteButton { 
+	position:relative; 
+	top:3px; 
+	left:12px; 
+	/*float:left;*/ 
+	margin-right:5px; 
+	display:inline-block; 
+	width:20px; 
+	height:20px; 
+	background:url(../images/audIcon.png) no-repeat; 
+	overflow:hidden; 
+	cursor:pointer; 
+	transition:opacity 1s; 
+	-moz-transition:opacity 1s; 
+	-webkit-transition:opacity 1s; 
+}
+
+#shuffle { 
+	position:relative; 
+	top:3px; 
+	left:8px; 
+	/*float:left;*/
+	display:inline-block; 
+	width:20px; 
+	height:17px; 
+	background-image:url(../images/shuffleIcon.png); 
+	background-repeat:no-repeat; 
+	overflow:hidden; 
+	cursor:pointer;
+}
+
+.shuffleMode { background-position: 0px -18px; }
+
+.muteMode { opacity:.2; }
