@@ -30,7 +30,7 @@
 
 body{
 	font-size:16px;
-	background-color: black;
+	background-color: #131313;
 }
 
 a{
@@ -43,7 +43,7 @@ nav{
 }
 
 ul{
-	width:70%;
+	width:80%;
 	margin:0 auto;
 	display:block;
 }
@@ -58,13 +58,13 @@ nav ul li + li:before {
     color:white;
     margin-right:0.2em;
     font-family: 'roboto_light';
-	font-size:2.69em;
+	font-size:1em;
 }
 
 nav ul li a{
 	color:white;
 	font-family: 'roboto_light';
-	font-size:2.69em;
+	font-size:1.5em;
 }
 
 nav ul li a:hover{
@@ -80,7 +80,7 @@ nav ul li a.active{
 h1{
 	font-family: 'always_in_my_heartregular';
 	color:white;
-	font-size:7.67em;
+	font-size:4em;
 	text-align:center;
 	padding-right:0.3em;
 	clear:both;
@@ -88,25 +88,32 @@ h1{
 	line-height:1;
 }
 
+p{
+	
+	font-family: 'Roboto';
+	font-size: 1em;
+}
+
 header{
 	background-image: url("../images/header-img.png");
 	background-repeat:no-repeat;
-	background-size: cover;
-	padding-bottom: 20px;
+	background-size: contain;
+	padding-bottom: 60px;
+	background-attachment: fixed;
 }
 
 header h2{
 	color:white;
 	font-family:'roboto_bold';
-	font-size:1.56em;
+	font-size:1em;
 	text-align: center;
 	margin-top:0em;
 }
 
 
-#login{
+#home{
 	font-family: 'always_in_my_heartregular';
-	font-size:4.8em;
+	font-size:3em;
 	float:right;
 	padding-right:1em;
 	color:black;
@@ -200,15 +207,16 @@ input[type="search"]::-webkit-search-decoration {
 
 .movieMainPageDetails h3{
 	font-family: 'roboto_bold';
-	font-size:2.5em;
+	font-size:2em;
 	text-overflow: ellipsis;
 	overflow: hidden;
 }
 
 .movieMainPageDetails h4{
 	font-family: 'roboto_light';
-	font-size: 2em;
-	margin-bottom:1em;
+	font-size: 2.4em;
+	margin-top: -0.5em;
+	margin-bottom:1.5em;
 }
 
 .movieMainPageDetails a{
@@ -226,7 +234,7 @@ input[type="search"]::-webkit-search-decoration {
 	color:white;
 	float:left;
 	max-width:55%;
-	margin-left:4em;
+	margin-left:2em;
 	overflow: hidden;
 	white-space: nowrap;
 }
@@ -240,24 +248,29 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 .movieDetailPage{
+}
 
+.movieYear{
+	margin-top: -0.7em;
 }
 
 .movieDetailPage h3{
 	color:white;
-	font-size: 5.5rem;
+	font-size: 3rem;
 	font-family: 'roboto_bold';
 }
 
 .movieDetailPage h4{
 	color:#3eab9f;
-	font-size: 4.375rem;
+	font-size: 3rem;
 	font-family: 'roboto_light';
 }
 
 .movieDetailPage p{
 	color:white;
-	font-size: 2rem;
+	font-size: 1.5rem;
+	font-family: 'roboto_light';
+	line-height: 1.2em;
 }
 
 .movieDetailComment{
@@ -274,9 +287,58 @@ input[type="search"]::-webkit-search-decoration {
 	margin-left:12%;
 }
 
+
+
 .comment{
 	color:white;
 	font-size:2rem;
 	float:left;
 	margin-left:1rem;
+}
+
+@media only screen and (min-width: 1000px) {
+	header{
+	background-image: url("../images/movies_header_small.png");
+		background-size: cover;
+		background-attachment: fixed;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	
+	#home{
+	font-size:4em;
+	}
+	
+	h1{
+	font-family: 'always_in_my_heartregular';
+	color:white;
+	font-size:7.5em;
+	}
+	
+	nav ul li a {
+		font-size: 1.5em;
+	}
+	
+	nav ul li + li:before{
+		font-size: 1.5em;
+	}
+	
+	.movieMainPageDetails h3{
+	font-size:2em;
+	}
+	
+	.movieDetailPage h3{
+	font-size: 3rem;
+}
+
+	.movieDetailPage h4{
+	font-size: 3rem;
+}
+
+	.movieDetailPage p{
+	font-size: 1.2em;
+}
+
+
 }

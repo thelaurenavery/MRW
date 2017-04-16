@@ -14,7 +14,7 @@
 	// set some post stuff up here
 	$filter = $_GET["filter"];	
 
-	$myQuery = "SELECT * FROM tbl_movies,tbl_comment,tbl_user WHERE tbl_comment.comment_movie = tbl_movies.movies_id AND tbl_comment.comment_user = tbl_user.user_id AND tbl_movies.movies_id = '$filter'";
+	$myQuery = "SELECT * FROM tbl_movies,tbl_comment WHERE tbl_comment.comment_movie = tbl_movies.movies_id AND tbl_movies.movies_id = '$filter'";
 	$result = mysqli_query($mysqli, $myQuery);
 
 	while ($r = mysqli_fetch_assoc($result)) {
